@@ -1,47 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-.nav-container
+
+body {
+    background-color: #CCA79B;
+}
+.nav-bar
 {
     background-color: black;
     color: white;
-    display: flex;
-    gap: 32px;
     padding: 18px;
-    align-items: center;
-    
-}
-.navegacao
-{
-    font-size: 24px;
     display: flex;
-    gap: 40px;    
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+    cursor: pointer;
 }
-.img-cabecalho
-{
-    
+
+.ancoras {
+    display: flex;
+    gap: 120px;
 }
-a:link{
+
+a {
+    text-decoration: none;
+    font-size: 38px;
+}
+
+a:visited, a:link, a:active {
     color: white;
 }
-a:visited
-{
-    color: white;
-}
-a:nth-child(1)
-{
-    margin-left: 250px;
-}
-a:nth-last-child(-n+3)
-{
-    font-size: 32px;
-}
-a:nth-last-child(3)
-{
-    margin-left: 260px;
-}
-.container-main
-{
-    position: relative;
-}
+
 .texto-main
 {
     font-family: Josefin Sans;
@@ -50,7 +39,7 @@ a:nth-last-child(3)
     font-size: 64px;
     line-height: 64px;
     text-shadow: 1px 6px 6px rgba(255, 255, 255, 0.62);
-    position: absolute;
+    position: relative;
     left: 20%;
     top: 22%;
 }
